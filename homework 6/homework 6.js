@@ -2,7 +2,7 @@ function Cat(name) {
     this.name = name;
     var foodAmount = 50;
 
-    formatFoodAmount = function () {
+    var formatFoodAmount = function () {
         return foodAmount + ' гр.'
     };
 
