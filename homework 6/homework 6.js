@@ -7,7 +7,7 @@ function Cat(name) {
     };
 
     this.feed = function () {
-        return 'Насыпаем в миску ' + formatFoodAmount() + ' корма.'
+        return 'Насыпаем в миску ' + this.dailyNorm() + ' корма.'
     };
 
     this.dailyNorm = function (amount) {
@@ -16,7 +16,7 @@ function Cat(name) {
         } else if (amount < 50 || amount > 500) {
             return 'Введены некоректные данные';
         } else {
-            return foodAmount = amount;
+             foodAmount = amount;
         }
     };
 }

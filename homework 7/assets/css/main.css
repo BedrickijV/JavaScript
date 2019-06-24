@@ -1,0 +1,556 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    width: 100%;
+}
+
+body {
+    background-color: #f2f4f8;
+    min-width: 300px;
+}
+
+header {
+    background-color: #2d313d;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 32px;
+    height: 20px;
+    margin: 18px 0 18px 6px;
+}
+
+.header div {
+    color: #727989;
+    font: 14px Arial;
+}
+
+.header div .city {
+    border-bottom: dashed 1px;
+    margin: 0 6px 0 22px;
+}
+
+.header div a {
+    text-decoration: none;
+    color: #727989;
+}
+
+.header div i {
+    font-size: 18px;
+    padding-right: 32px;
+
+}
+
+.header div .user-photo {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 10px;
+    padding: 0 24px 0 10px;
+    border-radius: 4px;
+}
+
+.nav {
+    background-color: #646d81;
+}
+
+.nav1 {
+    max-width: 960px;
+    margin: 0 auto;
+    font: 14px Arial;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.nav1 a {
+    text-decoration: none;
+    color: white;
+    padding: 7px 0 12px;
+    margin-right: 26px;
+    border-top: solid #646d81 5px;
+}
+
+.main {
+    display: flex;
+    justify-content: flex-start;
+    max-width: 960px;
+    margin: 0 auto;
+    box-shadow: 0 3px 10px #e0e2e6;
+    background-color: white;
+}
+
+.main menu {
+    flex-basis: 170px;
+    padding-top: 20px;
+    min-width: 170px;
+}
+
+.main menu li {
+    list-style-type: none;
+    padding: 9px 28px 9px 23px;
+    border-left: solid white 5px;
+}
+
+.main menu li a {
+    text-decoration: none;
+    font: 14px Arial;
+    color: #99a1b3;
+    margin: -10px -30px;
+    padding: 10px 30px;
+}
+
+.main .submenu {
+    margin-top: 32px;
+    padding: 9px 28px 9px 23px;
+    font: 18px Georgia;
+}
+
+.content {
+    border-left: solid #e0e4ed 1px;
+    flex-basis: 790px;
+    display: flex;
+    flex-direction: column;
+}
+
+.content h1 {
+    padding: 30px 0 20px 30px;
+    font: 30px Georgia;
+}
+
+.content h1 span {
+    margin-left: 28px;
+    border-bottom: dashed 1px;
+}
+
+.content h1 i {
+    padding: 0 38px 0 5px;
+}
+
+.form {
+    background-color: #f2f4f8;
+    padding: 5px 30px;
+    color: #99a1b3;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form input {
+    padding-left: 10px;
+    outline: none;
+    font: 14px Arial;
+    width: 280px;
+    height: 40px;
+    border: solid #d6d9e1 1px;
+    border-radius: 5px;
+    display: inline-block;
+    background: url("images/search.png") no-repeat 260px 9px;
+    background-color: white;
+}
+
+.item {
+    padding-top: 10px;
+
+}
+
+.item span {
+    margin-right: 86px;
+    font: 12px Georgia;
+}
+
+.item i {
+    margin-right: 30px;
+    font-size: 18px;
+}
+
+.post {
+    font: 12px Arial;
+    color: #99a1b3;
+    margin: 30px;
+}
+
+.image {
+    width: 60px;
+    float: left;
+    margin-right: 14px;
+}
+
+.postIns {
+    margin-left: 74px;
+}
+
+.member {
+    padding: 5px 15px;
+    background-color: #f2f4f8;
+    border-radius: 5px;
+    margin-left: 26px;
+}
+
+.comments {
+    float: right;
+    margin-right: 28px;
+}
+
+.comments span {
+    margin-right: 10px;
+}
+
+.title {
+    color: #4f9cd4;
+    font: bold 16px Arial;
+    padding: 5px 0 5px;
+}
+
+.text {
+    color: black;
+    font-size: 14px;
+    padding-bottom: 14px;
+}
+
+.postIns i span,
+.postIns span {
+    font-weight: normal;
+}
+
+.buttons {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.buttons a {
+    text-decoration: none;
+    color: black;
+    font: 14px Arial;
+    border: solid #99a1b3 1px;
+    border-radius: 4px;
+}
+
+.buttons a:first-child {
+    margin-right: 10px;
+    padding: 10px 18px 10px 13px;
+}
+
+.buttons a:last-child {
+    padding: 10px 13px 10px 18px
+}
+
+.buttons a .fa-angle-right {
+    padding-left: 12px;
+}
+
+.buttons a .fa-angle-left {
+    padding-right: 12px;
+}
+
+.footer {
+    color: #99a1b3;
+    font: 12px Arial;
+}
+
+.nav2 {
+    background-color: #f2f4f8;
+    padding-left: 28px;
+    margin-bottom: 1px;
+}
+
+.nav2 a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 14px 0;
+    margin-right: 18px;
+    color: #99a1b3;
+}
+
+.copy {
+    background-color: #f2f4f8;
+    padding: 14px 0 14px 28px;
+}
+
+.content-container {
+    flex: 1 0 auto;
+}
+
+.footer-container {
+    flex: 0 0 auto;
+}
+
+.nav1 a:hover {
+    border-top-color: white;
+    padding-top: 7px;
+    transition-duration: 0.3s;
+}
+
+.main menu li:hover {
+    border-left-color: #99a1b3;
+    transition-duration: 0.3s;
+    color: black;
+}
+
+.main menu li a:hover {
+    color: black;
+}
+
+.header_mobile {
+    display: none;
+    color: white;
+    text-align: center;
+}
+
+.header_mobile i {
+    font-size: 36px;
+    padding: 32px 0;
+}
+
+.header_mobile .logo_white {
+    margin-left: 35px;
+}
+
+.header_mobile img {
+    position: relative;
+    top: 16px;
+}
+
+.header_mobile span {
+    font: 36px Arial;
+    margin: 0 65px 0 50px;
+}
+
+.user_photo_mobile {
+    width: 60px;
+    height: 60px;
+    border-radius: 4px;
+    margin-right: 45px;
+}
+
+.form_mobile {
+    display: none;
+    background-color: #f2f4f8;
+    padding: 30px 45px;
+    color: #99a1b3;
+    font-size: 38px;
+}
+
+.fa-search {
+    padding-right: 5px;
+    cursor: pointer;
+}
+
+.right_block {
+    float: right;
+}
+
+.mobileMenu {
+    background-color: #2d313d;
+    display: none;
+    position: absolute;
+    width: 150px;
+    z-index: 10000;
+    top: 85px;
+    border: solid black 2px;
+    font: 26px Arial;
+}
+
+.mobileMenu ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.mobileMenu ul li a:hover {
+    color: grey;
+}
+
+
+@media (max-width: 780px) {
+    .item span {
+        margin-right: 15px;
+    }
+
+    .item i {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 640px) {
+    .header {
+        display: none;
+    }
+
+    .header_mobile {
+        display: block;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    menu {
+        display: none;
+    }
+
+    .content {
+        margin: 0;
+        border: none;
+    }
+
+    .content h1 {
+        font-size: 50px;
+        padding: 50px 75px 40px 85px;
+        text-align: center;
+    }
+
+    .form {
+        display: none;
+    }
+
+    .form_mobile {
+        display: block;
+    }
+
+    .post {
+        font-size: 24px;
+        margin: 60px;
+    }
+
+    .image {
+        margin-right: 20px;
+    }
+
+    .postIns {
+        margin-left: 80px;
+    }
+
+    .member {
+        margin-left: 10px;
+    }
+
+    .comments {
+        margin-right: 0;
+    }
+
+    .title {
+        font-size: 28px;
+    }
+
+    .text {
+        font-size: 26px;
+    }
+
+    .buttons a:first-child {
+        padding: 27px 40px 27px 30px;
+    }
+
+    .buttons a:last-child {
+        padding: 27px 30px 27px 40px;
+    }
+
+    .nav2 {
+        text-align: center;
+        padding: 30px 0;
+        font-size: 18px;
+    }
+
+    .nav2 a {
+        padding: 0;
+    }
+
+    .copy {
+        display: none;
+    }
+}
+
+@media (max-width: 610px) {
+    .header_mobile .fa-bars {
+        float: left;
+        padding-left: 10px;
+    }
+
+    .header_mobile i {
+        font-size: 20px;
+    }
+
+    .logo_white {
+        width: 60px;
+        margin-left: 15px;
+    }
+
+    .header_mobile span {
+        font-size: 20px;
+        margin: 0 13px;
+    }
+
+    .user_photo_mobile {
+        width: 45px;
+        height: 45px;
+        margin-right: 15px;
+    }
+
+    .content h1 {
+        font-size: 34px;
+        padding: 25px 10px;
+    }
+
+    .form_mobile {
+        font-size: 28px;
+        padding: 15px 40px;
+    }
+
+    .post {
+        font-size: 14px;
+        margin: 30px 20px;
+    }
+
+    .comments {
+        float: none;
+        display: block;
+        padding-top: 5px;
+    }
+
+    .title {
+        font-size: 18px;
+    }
+
+    .text {
+        font-size: 16px;
+    }
+
+    .buttons {
+        margin: 60px 0 70px;
+    }
+
+    .buttons a:first-child {
+        padding: 17px 30px 17px 20px;
+    }
+
+    .buttons a .fa-angle-left {
+        padding-right: 15px;
+    }
+
+    .buttons a:last-child {
+        padding: 17px 20px 17px 30px;
+    }
+
+    .buttons a .fa-angle-right {
+        padding-left: 15px;
+    }
+
+    .nav2 {
+        text-align: center;
+        padding: 30px 0;
+        font-size: 14px;
+    }
+
+    .mobileMenu {
+        top: 75px;
+        font-size: 20px;
+        width: 130px;
+    }
+}
