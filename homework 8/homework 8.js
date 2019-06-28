@@ -1,20 +1,20 @@
 function Animal(name) {
     this.name = name;
-    this._foodAmount = 50;
+    var foodAmount = 50;
     var self = this;
 
-    this._formatFoodAmount = function () {
-        return this._foodAmount + 'гр.';
+     function formatFoodAmount() {
+        return foodAmount + 'гр.';
     }
 
     this.dailyNorm = function (amount) {
-        if (!arguments.length) return this._formatFoodAmount();
+        if (!arguments.length) return formatFoodAmount();
 
         if (amount < 50 || amount > 500) {
             return 'Недопустимое количество корма.';
         }
 
-        this._foodAmount = amount;
+        foodAmount = amount;
     }
 
 
