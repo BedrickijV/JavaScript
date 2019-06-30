@@ -40,8 +40,8 @@ function deepClone(obj) {
                 copy[attr] = deepClone(obj[attr]);
             }
         }
+        return copy;
     }
-    return copy;
 
 }
 
