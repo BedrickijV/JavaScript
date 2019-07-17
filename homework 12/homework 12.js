@@ -1,25 +1,26 @@
-//Task 1
+// //Task 1
 var arr = ['vasya', 'petya', 'vanya'];
-
 function objCreate(arr) {
-    var newArr = [];
-    for (var i = 0; i < arr.length; i++) {
+    return arr.map(function (j, i, arr) {
         var newObj = {};
-        newObj.name = arr[i];
-        newArr.push(newObj);
-    }
-    return newArr;
+        newObj.name = j;
+        return newObj;
 
+    });
 }
 
 objCreate(arr);
+
+
 
 //Task 2
 
 var arr = ['00', '13', '24'];
 
 function clockCreate(arr) {
-    return 'Текущее время : ' + arr.join(' : ');
+    return  'Текущее время: ' + arr.reduce (function (r, v, i, arr) {
+        return r + ' : ' + v;
+    });
 
 }
 
@@ -58,19 +59,22 @@ vowels(textInput);
 
 // Вариант который вы возможно от нас хотите.
 
+
 var textInput = 'Это было очень длинное лето';
 
 function vowels(text) {
     var count = 0;
     var textMod = text.toLowerCase().split('');
     var vowels = ['а', 'е', 'ё', 'и', 'о', 'у', 'ы', 'э', 'ю', 'я'];
-    for (var i = 0; i < textMod.length; i++) {
-        for (var j = 0; j < vowels.length; j++) {
+    textMod.forEach(function (v, i, textMod) {
+        vowels.forEach(function (v,j, vowels) {
             if (textMod[i] === vowels[j]) {
-                count++
+                return count++;
             }
-        }
-    }
+        });
+
+});
+
     return count;
 }
 
@@ -78,8 +82,7 @@ vowels(textInput);
 
 //Task 4
 
-
-var textInput = "Это просто текст. Какое удивительное небо! Может по пиву? Нет, не сегодня";
+var textInput = 'Это просто текст. Какое удивительное небо! Может по пиву? Нет, не сегодня';
 
 function editText(textInput) {
     var textMod = textInput.toLowerCase().split(/[\!?.]/);
