@@ -20,33 +20,20 @@ function changeColorAndWeight() {
 }
 
 
-var link3 = document.getElementsByTagName('a')[2];
-var link4 = document.getElementsByTagName('a')[3];
-
-link3.addEventListener('click', pushOrGetLink3, false);
-
-function pushOrGetLink3(event) {
+secondPar.onclick = function (event) {
+    var target = event.target;
     event.preventDefault();
-    if (localStorage.link1 === undefined) {
-        localStorage.link1 = JSON.stringify({Path: link3.getAttribute('href')});
-        alert('Ссылка сохранена!');
+
+    if (target.tagName != 'A') {
+        return;
     } else {
-        alert(localStorage.link1);
+        var key = target.innerHTML;
+        if (localStorage[key] === undefined) {
+            localStorage.setItem(target.innerHTML, JSON.stringify({Path: target.getAttribute('href')}));
+            alert('Ссылка добавлена');
+        } else {
+            alert(JSON.parse(localStorage[key]).Path)
+        }
     }
-
-}
-
-link4.addEventListener('click', pushOrGetLink4, false);
-
-function pushOrGetLink4(event) {
-    event.preventDefault();
-    if (localStorage.link2 === undefined) {
-        localStorage.link2 = JSON.stringify({Path: link4.getAttribute('href')});
-        alert('Ссылка сохранена!');
-    } else {
-        alert(localStorage.link2);
-    }
-
-}
-
+};
 

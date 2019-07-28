@@ -10,7 +10,7 @@ function addRow() {
     table.insertBefore(row, table.children[0])
 }
 
-table.addEventListener("click", addInput, false);
+table.addEventListener('click', addInput, false);
 
 function addInput(event) {
     var target = event.target;
