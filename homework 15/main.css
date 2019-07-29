@@ -1,0 +1,72 @@
+body {
+    background-color: antiquewhite;
+}
+button {
+    color: black;
+    text-decoration: none;
+    user-select: none;
+    background: rgb(212,75,56);
+    padding: .7em 1.5em;
+    outline: none;
+    border: none;
+    position: relative;
+    width: 100%;
+    margin: 0px 5px 0px 5px;
+
+}
+.mainButton {
+    width: 30%;
+    margin: 20px;
+
+}
+button:hover {
+    background: rgb(60,179,113);
+}
+.error {
+    width: 600px;
+    color: red;
+    font: 20pt bold;
+
+}
+.status, .infoBlock {
+    width: 600px;
+    margin: 0px auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.infoBlock {
+    background: rgb(0,128,0);
+    height: 220px;
+
+}
+.innerBlock {
+    background: rgb(0,128,0);
+    height: 200px;
+    width: 100%;
+    margin: 10px;
+    position: relative;
+}
+.userInfoBlock {
+    width: 70%;
+    height: 50px;
+    background: rgb(0,128,0);
+    margin: auto;
+    position: relative;
+    top: 25%;
+}
+.photoBlock {
+    width: 70%;
+    height: 50px;
+    background: rgb(0,128,0);
+    margin: auto;
+    position: relative;
+    top: 25%;
+}
+.active {
+    background-color: rgb(0,128,0);
+    width: 100%;
+
+}
