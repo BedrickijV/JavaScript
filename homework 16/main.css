@@ -1,0 +1,31 @@
+.buttons {
+    width: 200px;
+    margin: 20px auto;
+    height: 50px;
+}
+.buttons button {
+    width: 100%;
+    height: 100%;
+    font: 30pt bold;
+    margin: 10px 0;
+}
+
+.stop-watch {
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    border: solid;
+    font-size: 40px;
+    margin: 10px auto;
+}
+
+.current-time {
+    width: 300px;
+    height: 50px;
+    margin: 10px auto;
+}
+.save-container {
+    width: 200px;
+    margin: 120px auto;
+    font: 30pt bold;
+}
